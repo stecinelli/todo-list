@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+body {
+  font-family: 'Fuzzy Bubbles', cursive;
+  color: #fef2f4;
+  margin: 0;
+  min-height: 100vh;
+  font-size: 20px;
+  background-color: #9494ab;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  padding: 0.5px;
+  font-size: 25px;
+}
+
+.addtodo__box--forminput {
+  width: 220px;
+  height: 40px;
+  background-color: #fef2f4;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #545758;
+}
+
+.addtodo__box--button {
+  background-color: #545758;
+  border-radius: 5px;
+  width: 40px;
+  height: 39px;
+  font-size:x-large;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.todo__box > h3, .done__box > h3  {
+  border-radius: 5px;
+  width: 220px;
+  height: 25px;
+  background-color: #545758;
+  font-size:medium;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.todo__box, .done__box {
+  justify-content: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.todo__item, .todo__item--completed  {
+  border-radius: 5px;
+  width: 220px;
+  height: 40px;
+  background-color: #fef2f4;
+  color: #545758;
+  list-style: none;
+  font-weight: bold;
+  padding: 7px;
+  margin-bottom: 5px;
+}
+
+.todo__item {
+  width: 219px;
+  height: 39px;
+  text-align: left;
+}
+
+.todo__item--completed {
+  text-decoration: line-through;
+  font-weight: lighter;
+  background-color: #babad6;
+  padding: 1px;
+}
+
+.todo__item--completed--deletebutton {
+  background-color: #babad6;
+  color: black;
+  border:none;
+}
+
+.todo__item--completed--deletebutton > img {
+  background-color: #babad6;
+  color: black;
+  border:none;
+  padding: 0;
+  margin-left: 80px;
+  margin-bottom: -3px;
+  margin-top: 5px;
+  inset-inline-end:initial;
+}
+
+@media only screen and (min-width: 680px) {
+
+  header{
+    font-size:x-large;
+  }
+}
+
+@media only screen and (min-width: 1124px) {
+
+  header {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+}
